@@ -13,6 +13,11 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        'heading': ['Cinzel Decorative', 'serif'],
+        'title': ['Playfair Display SC', 'serif'],
+        'body': ['Merriweather', 'serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -47,16 +52,27 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        sidebar: {
-          DEFAULT: "hsl(var(--sidebar-background))",
-          foreground: "hsl(var(--sidebar-foreground))",
-          primary: "hsl(var(--sidebar-primary))",
-          "primary-foreground": "hsl(var(--sidebar-primary-foreground))",
-          accent: "hsl(var(--sidebar-accent))",
-          "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
-          border: "hsl(var(--sidebar-border))",
-          ring: "hsl(var(--sidebar-ring))",
+        // Temple-specific colors
+        temple: {
+          maroon: "hsl(var(--temple-maroon))",
+          gold: "hsl(var(--temple-gold))",
+          beige: "hsl(var(--sandalwood-beige))",
+          grey: "hsl(var(--stone-grey))",
+          blue: "hsl(var(--peacock-blue))",
+          pink: "hsl(var(--lotus-pink))",
+          cream: "hsl(var(--warm-cream))",
         },
+      },
+      backgroundImage: {
+        'temple-arch': 'var(--temple-arch-gradient)',
+        'diya-glow': 'var(--diya-glow)',
+        'stone-texture': 'var(--stone-texture)',
+        'lotus-gradient': 'var(--lotus-gradient)',
+      },
+      boxShadow: {
+        'temple': 'var(--temple-shadow)',
+        'golden': 'var(--golden-glow)',
+        'diya': 'var(--diya-flicker)',
       },
       borderRadius: {
         lg: "var(--radius)",

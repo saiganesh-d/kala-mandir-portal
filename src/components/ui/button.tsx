@@ -15,6 +15,9 @@ const buttonVariants = cva(
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        temple: "bg-temple-arch text-temple-gold border border-temple-gold/30 hover:shadow-golden font-title tracking-wide",
+        stone: "bg-stone-texture text-temple-maroon border-2 border-temple-gold hover:bg-temple-gold hover:text-temple-maroon font-title",
+        diya: "bg-temple-gold text-temple-maroon hover:shadow-diya transition-all duration-300 font-heading",
       },
       size: {
         default: "h-10 px-4 py-2",
