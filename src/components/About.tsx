@@ -22,7 +22,7 @@ const About = () => {
               <div className="temple-arch p-4 rounded-lg">
                 <img 
                   src={teacherPortrait} 
-                  alt="Smt. Lakshmi Devi - Traditional Art Teacher" 
+                  alt="Shobha - Traditional Art Teacher" 
                   className="w-full h-96 object-cover rounded-lg"
                 />
               </div>
@@ -34,12 +34,12 @@ const About = () => {
             {/* Content */}
             <div className="scroll-frame">
               <h3 className="font-title text-3xl font-bold text-temple-maroon mb-6">
-                Smt. Lakshmi Devi
+                Shobha
               </h3>
               
               <p className="font-body text-lg text-temple-maroon/80 mb-6 leading-relaxed">
                 With over 15 years of experience in traditional South Indian art forms, 
-                Smt. Lakshmi Devi is a renowned artist and teacher who has dedicated her 
+                Shobha is a renowned artist and teacher who has dedicated her 
                 life to preserving and propagating the sacred art traditions of our culture.
               </p>
               

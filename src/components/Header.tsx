@@ -20,7 +20,7 @@ const Header = () => {
           </div>
           <div className="flex items-center gap-2 text-temple-gold">
             <MapPin className="w-4 h-4" />
-            <span>Chennai, Tamil Nadu</span>
+            <span>Bangalore, Karnataka</span>
           </div>
         </div>
       </div>
@@ -31,7 +31,7 @@ const Header = () => {
           {/* Logo */}
           <div className="temple-arch p-3 rounded-lg">
             <h1 className="text-temple-gold font-heading text-2xl font-bold">
-              Temple Arts Academy
+              Kalaa Kuteer Academy
             </h1>
           </div>
 
