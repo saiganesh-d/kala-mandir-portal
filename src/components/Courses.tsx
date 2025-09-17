@@ -5,7 +5,7 @@ import tanjoureSample from '@/assets/tanjore-sample.jpg';
 import keralaMuralSample from '@/assets/kerala-mural-sample.jpg';
 import mysoreSample from '@/assets/mysore-sample.jpg';
 
-const courses = [
+const mainCourses = [
   {
     title: 'Tanjore Painting',
     description: 'Master the classical art of Tanjore with rich gold work and vibrant colors. Learn traditional techniques passed down through generations.',
@@ -35,6 +35,25 @@ const courses = [
   }
 ];
 
+const allCourses = [
+  'Tanjore Paintings',
+  'Kerala Mural Paintings', 
+  'Mysore Paintings',
+  'Rajasthani Relief Paintings',
+  'Oil Paintings',
+  'Acrylic Paintings',
+  'Fabric Paintings',
+  'Abstract Paintings',
+  'Textured Paintings',
+  'Pichwai Paintings',
+  'Persian Art',
+  'Resin Art',
+  'Terracotta Work',
+  'Pot Paintings',
+  'Knitting & Crochet',
+  'Hand Embroidery'
+];
+
 const Courses = () => {
   return (
     <section id="courses" className="py-20 bg-stone-texture">
@@ -43,17 +62,20 @@ const Courses = () => {
           {/* Section Header */}
           <div className="text-center mb-16">
             <h2 className="font-heading text-4xl md:text-5xl font-bold text-temple-maroon mb-4">
-              Sacred Art Forms
+              Kalaa Kuteer Art Classes
             </h2>
-            <p className="font-body text-xl text-temple-maroon/80 max-w-2xl mx-auto">
-              Immerse yourself in the divine world of traditional South Indian arts
-            </p>
+            <div className="inline-block bg-temple-gold text-temple-maroon font-bold px-6 py-2 rounded-lg transform -rotate-2 mb-4">
+              WEEKEND CLASSES FOR
+            </div>
+            <div className="inline-block bg-temple-gold/20 text-temple-maroon font-title px-4 py-2 rounded-lg ml-4">
+              Teachers with 30+ years experience
+            </div>
             <div className="w-32 h-1 bg-temple-gold mx-auto rounded-full mt-6"></div>
           </div>
 
-          {/* Courses Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {courses.map((course, index) => (
+          {/* Main Featured Courses */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+            {mainCourses.map((course, index) => (
               <div key={index} className="temple-card group cursor-pointer">
                 {/* Course Image in Temple Arch */}
                 <div className="relative mb-6 overflow-hidden rounded-lg">
@@ -116,21 +138,53 @@ const Courses = () => {
             ))}
           </div>
 
+          {/* Complete Course List */}
+          <div className="scroll-frame max-w-4xl mx-auto mb-16">
+            <div className="text-center mb-8">
+              <div className="inline-block bg-temple-gold text-temple-maroon px-8 py-3 rounded-lg font-heading text-2xl font-bold transform rotate-1">
+                JOIN NOW
+              </div>
+            </div>
+            
+            <h3 className="font-title text-2xl font-bold text-temple-maroon mb-6 text-center">
+              Complete Course Offerings
+            </h3>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {allCourses.map((course, index) => (
+                <div key={index} className="flex items-center gap-3 p-3 rounded-lg hover:bg-temple-gold/10 transition-colors">
+                  <div className="w-3 h-3 bg-temple-gold rounded-full"></div>
+                  <span className="font-body text-temple-maroon font-medium">{course}</span>
+                </div>
+              ))}
+              <div className="md:col-span-2 text-center mt-4">
+                <span className="font-body text-temple-maroon/80 text-lg font-medium">
+                  AND MUCH MORE...
+                </span>
+              </div>
+            </div>
+          </div>
+
           {/* Bottom CTA */}
-          <div className="text-center mt-16">
+          <div className="text-center">
             <div className="scroll-frame max-w-2xl mx-auto">
               <h3 className="font-title text-2xl font-bold text-temple-maroon mb-4">
                 Ready to Begin Your Artistic Journey?
               </h3>
               <p className="font-body text-temple-maroon/80 mb-6">
-                Join our community of artists and discover the sacred traditions of South Indian art
+                Join our community of artists and discover the sacred traditions of art with our experienced teachers
               </p>
-              <Button variant="diya" size="lg" className="mr-4">
-                Book Free Trial Class
-              </Button>
-              <Button variant="stone" size="lg">
-                Download Brochure
-              </Button>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Button variant="diya" size="lg">
+                  📞 Call Now to Book
+                </Button>
+                <Button variant="stone" size="lg">
+                  💬 WhatsApp Us
+                </Button>
+                <Button variant="temple" size="lg">
+                  Download Brochure
+                </Button>
+              </div>
             </div>
           </div>
         </div>
